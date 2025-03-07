@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../ui/button";
 
 const CauseHero = () => {
@@ -25,9 +26,11 @@ const CauseHero = () => {
             and skills training. The You-Skilled Program empowers them with the
             tools they need to build a better future.
           </p>
-          <Button variant="ocx" className="mr-auto md:mr-0">
-            DONATE
-          </Button>
+          <Link href="/donate">
+            <Button variant="ocx" className="mr-auto md:mr-0">
+              DONATE
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

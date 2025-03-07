@@ -47,12 +47,11 @@ const ContactSection = () => {
     <section className="py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Left Column - Contact Info */}
-          <div className="bg-orange-500/20 text-black p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4">
+          <div className="bg-orange-500/20 text-black p-6 rounded-lg items-center">
+            <h3 className="text-xl md:text-2xl lg:text-4xl text-center font-bold mb-4">
               Share love, donate hope.
             </h3>
-            <p className="text-sm mb-6">
+            <p className="text-sm md:text-base mb-6">
               We&apos;re here to help! Reach out to us through any of these
               channels:
             </p>
@@ -60,10 +59,7 @@ const ContactSection = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5" />
-                <div>
-                  123 Hope Street <br />
-                  Charity City, CT 06001
-                </div>
+                <div>123 Hope Street, Charity City, CT 06001</div>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5" />

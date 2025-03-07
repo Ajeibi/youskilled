@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../ui/button";
 
 const ContactHero = () => {
@@ -24,9 +25,11 @@ const ContactHero = () => {
             Whether you want to donate, volunteer, or collaborate, we’re here to
             connect with you.
           </p>
-          <Button variant="ocx" className="mr-auto md:mr-0">
-            DONATE
-          </Button>
+          <Link href="/donate">
+            <Button variant="ocx" className="mr-auto md:mr-0">
+              DONATE
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

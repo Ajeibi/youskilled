@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const DonateCTA = () => {
   return (
     <section
@@ -6,10 +8,8 @@ const DonateCTA = () => {
         backgroundImage: "url('/donate.webp')",
       }}
     >
-      {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/90" />
 
-      {/* Content Container */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-300">
           Make a Difference – Empower a Future
@@ -19,9 +19,11 @@ const DonateCTA = () => {
           to underprivileged communities. Every contribution creates lasting
           impact.
         </p>
-        <button className="bg-orange-500 text-white px-8 py-3 rounded-full font-medium text-lg hover:bg-orange-600 transition focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
-          Donate Now
-        </button>
+        <Link href="/donate">
+          <button className="bg-orange-500 text-white px-8 py-3 rounded-full font-medium text-lg hover:bg-orange-600 transition focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+            Donate Now
+          </button>
+        </Link>
       </div>
     </section>
   );

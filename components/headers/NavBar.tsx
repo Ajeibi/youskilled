@@ -12,12 +12,14 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black text-white font-light py-4 px-5 md:px-20 flex justify-between items-center">
-      <div className="flex items-center gap-2">
-        <Image src="/logo.svg" alt="logo" width={30} height={30} />
-        <p className="font-normal great-vibes text-orange-500 font-great-vibes">
-          You-Skilled
-        </p>
-      </div>
+      <Link href="/">
+        <div className="flex items-center gap-2">
+          <Image src="/logo.svg" alt="logo" width={30} height={30} />
+          <p className="font-normal great-vibes text-orange-500 font-great-vibes">
+            You-Skilled
+          </p>
+        </div>
+      </Link>
 
       <div className="hidden md:flex space-x-6 font-extralight">
         {navLinks.map((link) => (

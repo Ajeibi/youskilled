@@ -42,15 +42,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar />
-        {children}
-        <JoinUs />
-        <PartnersSection />
-        <DonateCTA />
-        <Footer />
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <div className="max-w-[1600px] mx-auto bg-white min-h-screen">
+          <Navbar />
+          {children}
+          <JoinUs />
+          <PartnersSection />
+          <DonateCTA />
+          <Footer />
+        </div>
       </body>
     </html>
   );

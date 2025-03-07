@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CustomCountUp from "../countUp";
 import { Button } from "../ui/button";
 
@@ -27,9 +28,11 @@ const HeroSection = () => {
             Your support helps underprivileged individuals gain valuable skills,
             break barriers, and achieve financial independence.
           </p>
-          <Button variant="ocx" className="">
-            DONATE
-          </Button>
+          <Link href="/donate">
+            <Button variant="ocx" className="">
+              DONATE
+            </Button>
+          </Link>
           <div className="md:py-10 py-5 flex gap-5 text-white  text-base md:text-lg lg:text-2xl">
             <div className="flex gap-3">
               <span className="text-orange-500">

@@ -129,3 +129,13 @@
 .great-vibes {
   font-family: "Great Vibes", cursive;
 }
+
+body {
+  @apply bg-black;
+}
+
+@layer base {
+  html {
+    @apply overflow-x-hidden;
+  }
+}
